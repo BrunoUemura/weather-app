@@ -18,7 +18,7 @@ const WeatherInfo = ({ currentWeather }) => {
     <View style={styles.weatherInfo}>
       <Text>{name}</Text>
       <Image style={styles.weatherIcon} source={{ uri: iconUrl }} />
-      <Text style={styles.textPrimary}>{temp}º</Text>
+      <Text style={styles.textPrimary}>{`${Math.round(temp)}`}º</Text>
       <Text style={styles.weatherDescription}>{description}</Text>
       <Text style={styles.textSecondary}>{main}</Text>
     </View>
